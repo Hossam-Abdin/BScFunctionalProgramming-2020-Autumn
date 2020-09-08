@@ -18,14 +18,14 @@ Consultation Hours:\
 TBA
 
 Tutors:\
-[https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Autumn/blob/master/Tutor_Contacts.md](https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Spring/blob/master/Tutor_Contacts.md)
+[https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Tutor_Contacts.md](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Tutor_Contacts.md)
 
 Grading system:\
-[https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Autumn/blob/master/Grading_System.md](https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Spring/blob/master/Grading_System.md)
+[https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Grading_System.md](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Grading_System.md)
 
 
 Important Dates:\
-[https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Autumn/blob/master/Important_Dates.md](https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Spring/blob/master/Important_Dates.md)
+[https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Important_Dates.md](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Important_Dates.md)
 
 Give Us Feedback:\
 TBA
@@ -52,13 +52,13 @@ Download and Install the latest release of Clean:\
 [https://clean.cs.ru.nl/Download_Clean](https://clean.cs.ru.nl/Download_Clean)
 
 Getting Started with Clean:\
-[https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Autumn/blob/master/Start_Guide.md](https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Spring/blob/master/Start_Guide.md)
+[https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Start_Guide.md](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Start_Guide.md)
 
 Clean Specific Books:
  - [A Functional Programmer's
-   Workout](https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Spring/blob/master/Resources/A%20Functional%20Programmers%20Workout.pdf)
+   Workout](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Resources/A%20Functional%20Programmers%20Workout.pdf)
   - [Functional Programming in
-   Clean](https://github.com/ParadoxChains/BScFunctionalProgramming-2020-Spring/blob/master/Resources/CleanBookI.pdf)
+   Clean](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Resources/CleanBookI.pdf)
   - [Functional Programming and Graph
    Rewriting](https://clean.cs.ru.nl/Functional_Programming_and_Parallel_Graph_Rewriting)
 
