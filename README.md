@@ -78,3 +78,7 @@ You're all good at something different. We are here to help you with Functional 
 And please, **try to have fun!**
 
 ![For your consideration.](http://www.phdcomics.com/comics/archive/phd051013s.gif)
+
+---
+
+**Most of the work here was done by the magnificent Evan Sitt.**
