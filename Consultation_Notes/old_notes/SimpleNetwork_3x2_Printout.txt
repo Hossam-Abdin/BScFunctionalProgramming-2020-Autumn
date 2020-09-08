@@ -1,0 +1,14 @@
+"Node ID: central | Node IPv4 Address: 10.0.0.1 | Node Operational Status: True | Number of Subnodes: 3
+    Node ID: user/0001 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 3
+        Node ID: user/0001/0001 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+        Node ID: user/0001/0002 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+        Node ID: user/0001/0003 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+    Node ID: user/0002 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 3
+        Node ID: user/0002/0001 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+        Node ID: user/0002/0002 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+        Node ID: user/0002/0003 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+    Node ID: user/0003 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 3
+        Node ID: user/0003/0001 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+        Node ID: user/0003/0002 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+        Node ID: user/0003/0003 | Node IPv4 Address: 0.0.0.0 | Node Operational Status: True | Number of Subnodes: 0
+"
