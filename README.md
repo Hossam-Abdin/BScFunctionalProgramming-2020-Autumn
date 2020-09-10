@@ -14,7 +14,6 @@ Official Course Lecturer: Viktoria Zsök
 - Email: [zsv@inf.elte.hu](zsv@inf.elte.hu)
 
 Practice Instructor: Zurab Tsinadze
-- Website: [http://zsv.web.elte.hu/clean](http://zsv.web.elte.hu/clean)
 - Office: No office for me :(
 - Email: [zukatsinadze@gmail.com](zukatsinadze@gmail.com)
 - Facebook: [https://www.facebook.com/zuka.tsinadze](https://www.facebook.com/zuka.tsinadze)
