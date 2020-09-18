@@ -1,9 +1,23 @@
 What are we going to do today:
 - Who am I
-- Why FP from practical point of view.
+- Canvas and bead check (password for quiz : try)
 - what are the resources we are going to use?
+	- the github repo
+	- canvas (quizzes) (every week)
+	- BE-AD (hw, pt) (every week) (mid-term and end-term)
 - Install clean on your system.
+- Why FP from practical point of view.
 - start function
 - How to write a function
 - Guards
 - simple recursion
+
+----------------------------------------
+
+Important links :
+ - https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn
+ - https://www.youtube.com/channel/UCPnSp1l8Avgwz8F9SjIWsCg
+ - canvas.elte.hu
+ - bead.inf.elte.hu
+		    
+                        
