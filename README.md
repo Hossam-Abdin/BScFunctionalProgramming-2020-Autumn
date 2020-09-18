@@ -15,6 +15,7 @@ Course Lecturer & Practice Instructor: Viktoria Zsök
 
 Practice Instructor: Beka Grdzelishvili
 - Email: [bekagrdzelishvili0@gmail.com ](bekagrdzelishvili0@gmail.com)
+- Facebook: [https://www.facebook.com/beka.grdzelishvili.7](https://www.facebook.com/beka.grdzelishvili.7)
 - Office hours:
   - **Please email me in advance for consultations.**
   
