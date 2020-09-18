@@ -139,16 +139,3 @@ sumDigits x
 //sumDigits -123414 -> sumDigits 123414
 
 //Start = 5.2/2.0
-
-
-numToList :: Int -> [Int]
-numToList x
-|x == 0  = []
-= numToList (x/10) ++  [abs(x rem 10)]
-
-sum1 :: [Int] -> Int
-sum1 x
-| x == [] = 0
-| otherwise = hd x + sum1 (tl x)
-
-Start = sum1 (numToList -123)
