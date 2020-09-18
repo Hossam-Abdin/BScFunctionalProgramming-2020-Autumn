@@ -8,21 +8,37 @@ This is the public repository for all files used in the practice sessions.\
 Additional practice and help files may be uploaded here as well. For those who need help with Git, you can learn some more over at: [https://learngitbranching.js.org/](https://learngitbranching.js.org/) Though to be perfectly honest, most of Git is learned by using it, and via trial and error.
 
 ## Course Information
-Official Course Lecturer: Viktoria Zsök
+Course Lecturer & Practice Instructor: Viktoria Zsök
 - Website: [http://zsv.web.elte.hu/clean](http://zsv.web.elte.hu/clean)
 - Office: 2-606 South Building
 - Email: [zsv@inf.elte.hu](zsv@inf.elte.hu)
 
+Practice Instructor: Beka Grdzelishvili
+- Email: [bekagrdzelishvili0@gmail.com ](bekagrdzelishvili0@gmail.com)
+- Office hours:
+  - **Please email me in advance for consultations.**
+  
+ Practice Instructor: Nikola Cenic
+- Email: [nicola.cenic@gmail.com ](nicola.cenic@gmail.com )
+- Facebook: [https://www.facebook.com/nicola.cenic1](https://www.facebook.com/nicola.cenic1)
+- Office hours:
+  - **Please email me in advance for consultations.**
+
 Practice Instructor: Zurab Tsinadze
-- Office: No office for me :(
 - Email: [zukatsinadze@gmail.com](zukatsinadze@gmail.com)
 - Facebook: [https://www.facebook.com/zuka.tsinadze](https://www.facebook.com/zuka.tsinadze)
 - Office hours:
-  - **TBA**
   - **Please email me in advance for consultations.**
-
+  
+ Practice Instructor: Hossameldin Abdin
+- Email: [hossamabdeen17@gmail.com](hossamabdeen17@gmail.com)
+- Facebook: [https://www.facebook.com/hossamabdeen17/](https://www.facebook.com/hossamabdeen17/)
+- Office hours:
+  - **Please email me in advance for consultations.**
+  
+ 
 Consultation Hours:\
-TBA
+#### Tuesday 18.30-19.30 p.m.
 
 Tutors:\
 [https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Tutor_Contacts.md](https://github.com/Hossam-Abdin/BScFunctionalProgramming-2020-Autumn/blob/master/Tutor_Contacts.md)
@@ -73,10 +89,8 @@ Extensive Documentation of Clean's Built-in Functions:\
 [https://cloogle.org/](https://cloogle.org/)
 
 ---
-## Contact Me
-TBA
 
-**Please, feel free to contact me about anything.**
+**Please, feel free to contact us about anything.**
 
 Functional Programming, and Clean itself, are far from the easiest things to pick up. This course is no breeze either. For some, it will click right away, and for some it will click later. Or even never.\
 ***This is okay.***\
