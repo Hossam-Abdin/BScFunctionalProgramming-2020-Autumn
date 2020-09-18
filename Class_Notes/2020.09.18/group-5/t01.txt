@@ -1,0 +1,9 @@
+What are we going to do today:
+- Who am I
+- Why FP from practical point of view.
+- what are the resources we are going to use?
+- Install clean on your system.
+- start function
+- How to write a function
+- Guards
+- simple recursion
