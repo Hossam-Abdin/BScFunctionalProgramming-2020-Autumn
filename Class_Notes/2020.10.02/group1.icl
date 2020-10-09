@@ -9,7 +9,7 @@ init [x:xs] = [x: init xs] // [x] ++ init xs
 // Start = init [1,2,3,4,5] = [1: init [2,3,4,5]] = [1 : [2: init [3,4,5]]] = [1: [2: [3: init [4,5]]]]
 // = [1: [2: [3: [4: init [5]]]]] = [1, 2, 3, 4]
 
-Start = [1..-5]
+// Start = [1..-5]
 
 fib :: Int -> Int
 fib 0 = 0
@@ -51,3 +51,8 @@ fib n = fib (n-1) + fib (n-2)
 (f) [x:xs] [y:ys] = (x==y) && (xs==ys)
 
 // Start = [1,2] f [1,2]
+
+cat :: [[Int]] -> [Int]
+cat x =  hd x ++ last x
+
+Start = cat [] // []
