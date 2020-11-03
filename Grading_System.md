@@ -15,8 +15,8 @@ with their upload in BE-AD system before their deadline, evaluation.
 At the end of semester out of 10 x 3 points min. 15 points must be achieved.
   #### Note : Both of the requirements above are not counted in the grade but it is essential to have at least 50% in each to have a grade.
 * Homework (15% of the final grade)
-* Mid-term (theory + programming) (35% of the final grade) 
-* End-term (theory + programming) (35% of the final grade)
+* Mid-term (programming) (35% of the final grade) 
+* End-term (programming) (35% of the final grade)
   #### Note : 15% of the final grade comes from two theoretical exam quizzes (from both Mid-term and End-term)
 
 ## Grade Cutoffs:
