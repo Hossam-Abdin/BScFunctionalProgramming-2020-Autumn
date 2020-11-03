@@ -1,4 +1,4 @@
-module group1
+module group2
 import StdEnv
 
 //1. Given a list of lists of Integers,
