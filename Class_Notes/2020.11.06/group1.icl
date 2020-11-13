@@ -216,3 +216,19 @@ addSum list = [sublist ++ [sum sublist] \\ sublist <- list]
 
 // //Start = addSum [[1,2], [3,4,5], [6,5,9,7], [], [8]] //[[1,2,3],[3,4,5,12],[6,5,9,7,27],[0],[8,8]]
 
+f2 :: [Int] -> Int
+f2 [x:xs]
+| [x:xs] == [] = 0
+= foldl (-) x xs
+
+Start = f2 [1000,500,250]
+// f2 [1000,500,250] = foldl (-) 1000 [500, 250] = foldl (-) 500 [250] = foldl (-) 250 [] = 250
+
+
+
+
+// foldl :: (a -> b -> a) a [b] -> a
+// foldl op r l :== foldl r l
+// where
+// 	foldl r [] = r
+// 	foldl r [a:x] = foldl (op r a) x
