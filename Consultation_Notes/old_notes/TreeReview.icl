@@ -12,6 +12,7 @@ and two subtrees, which are Trees of the same type 'a'.
 
 //Below are some convenient trees to work with for
 //exercises and testing.
+
 ourTree :: (Tree Int)
 ourTree = Node 15(Node 3(Node 1 Leaf Leaf)(Node 10(Node 7 Leaf (Node 8 Leaf Leaf))(Node 13 (Node 11 Leaf Leaf) Leaf)))(Node 20 (Node 18 Leaf (Node 19 Leaf Leaf)) (Node 21 Leaf (Node 26 (Node 24 Leaf Leaf) (Node 28 Leaf Leaf))))
 //Start = ourTree
@@ -26,11 +27,16 @@ messyTree = Node 5(Node 12(Node 8 Leaf (Node 1 Leaf Leaf))(Node 6 (Node 9 Leaf L
 extractNode :: (Tree a) -> a
 extractNode (Node x l r) = x
 
+// Start = extractNode ourTree
+
 //Going down left/right subtree
 goL :: (Tree a) -> (Tree a)
 goL (Node x l r) = l
 goR :: (Tree a) -> (Tree a)
 goR (Node x l r) = r
+
+// Start = goR ourTree
+// Start = goL ourTree
 
 //Checking if we're at a leaf
 isLeaf :: (Tree a) -> Bool
@@ -49,6 +55,12 @@ minTree tree
 = minTree (goL tree)
 //Start = minTree ourTree
 
+getMin :: (Tree a) -> a
+getMin (Node x Leaf _) = x 
+getMin (Node x l r) = getMin l
+
+// Start = getMin ourTree
+
 //Reverse a tree
 reverseTree :: (Tree a) -> (Tree a)
 reverseTree Leaf = Leaf
@@ -64,12 +76,17 @@ maxTree tree = minTree(reverseTree tree)
 subTreeList :: (Tree a) -> [(Tree a)]
 subTreeList Leaf = []
 subTreeList tree = subTreeList(goL tree) ++ [tree] ++ subTreeList(goR tree)
-//Start = subTreeList ourTree 
+
+// subTreeList :: (Tree a) -> [(Tree a)]
+// subTreeList Leaf = []
+// subTreeList (Node x l r) = subTreeList(l) ++ [(Node x l r)] ++ subTreeList(r)
+
+// Start = subTreeList ourTree 
 
 //Extract sublists countaining a specific element
 extractSubLists :: a (Tree a) -> [(Tree a)] | Eq a
 extractSubLists n tree = [subtree\\subtree<-(subTreeList tree)|(extractNode subtree)==n]
-//Start = extractSubLists 3 ourTree
+// Start = extractSubLists 3 ourTree
 
 //Get a list of children of a node
 getChildren :: a (Tree a) -> [a] | Eq a
@@ -85,20 +102,22 @@ getChildren n tree
 //Get the parent of a node
 findParent :: a (Tree a) -> a | Eq a
 findParent n tree = hd(findParentAux n tree)
+
 findParentAux n tree
 | isLeaf tree = []
 | n==extractNode tree = abort "No Parent\n"
 | isMember n (getChildren (extractNode tree) tree) = [extractNode tree]
 = findParentAux n (goL tree) ++ findParentAux n (goR tree)
+ 
 //Start = findParent 13 ourTree
 //Start = findParent 15 ourTree
 //Start = findParent 19 ourTree
 
 //Check if a Binary Tree is actually a BST
-checkBST :: (Tree a) -> Bool | Ord a
-checkBST t = l == sort l
-where
-    l = treeToList t
+// checkBST :: (Tree a) -> Bool | Ord a
+// checkBST t = l == sort l
+// where
+//     l = treeToList t
 //Start = checkBST ourTree
 //Start = checkBST messyTree
 
