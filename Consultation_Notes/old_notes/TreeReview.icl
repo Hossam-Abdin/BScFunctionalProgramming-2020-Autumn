@@ -103,14 +103,23 @@ getChildren n tree
 findParent :: a (Tree a) -> a | Eq a
 findParent n tree = hd(findParentAux n tree)
 
-findParentAux n tree
-| isLeaf tree = []
-| n==extractNode tree = abort "No Parent\n"
-| isMember n (getChildren (extractNode tree) tree) = [extractNode tree]
-= findParentAux n (goL tree) ++ findParentAux n (goR tree)
- 
-//Start = findParent 13 ourTree
-//Start = findParent 15 ourTree
+// findParentAux n tree
+// | isLeaf tree = []
+// | n==extractNode tree = abort "No Parent\n"
+// | isMember n (getChildren (extractNode tree) tree) = [extractNode tree]
+// = findParentAux n (goL tree) ++ findParentAux n (goR tree)
+
+// findParentAux :: a (Tree a) -> [a] | Eq a
+// findParentAux n Leaf = []
+// findParentAux n (Node x Leaf Leaf) = []
+// findParentAux n (Node x l Leaf) = findParentAux n l
+// findParentAux n (Node x Leaf r) = findParentAux n r
+// findParentAux n (Node x l r)
+// |(extractNode l) == n || (extractNode r) == n = [x]
+// = findParentAux n l ++ findParentAux n r 
+
+// Start = findParent 13 ourTree
+Start = findParent 15 ourTree
 //Start = findParent 19 ourTree
 
 //Check if a Binary Tree is actually a BST
