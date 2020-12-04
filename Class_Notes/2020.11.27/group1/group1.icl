@@ -70,3 +70,6 @@ numDigits x = size (toString x)
 
 // arrayToList
 // listToarray
+
+
+Start =
