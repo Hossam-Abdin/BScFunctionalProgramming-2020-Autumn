@@ -145,9 +145,58 @@ highestGpa arr
 
 /*4	Create a toString instance for Student such that for given student ex. Nikola={studentName="Nikola",age=19,grades={4,4,4,4,2},
 favoriteTeacher=Peter} it gives "Nikola 3.6 Peter" where 3.6 is the student's gpa and Peter is the student's favorite teacher's name*/
-//instance toString Student
+instance toString Student
+    where
+       toString x = x.studentName +++ " " +++ toString(average x) +++ " " +++ x.favoriteTeacher.tname 
 
-//Start=toString Nikola//"Nikola  3.6  Peter"
+// Start=toString Nikola//"Nikola  3.6  Peter"
 //Start=toString Marko//"Marko  4.25  Mary"
 //Start=toString Nik//"Nik  3.8  Peter"
 //Start=toString Dame//"Dame  3.5  Peter"
+
+//6. Given two arrays, return new array such that i-th element of it is maximum of i-th element of first and second arrays.
+// So for example, when we calculate 5th element of result array, we look at 5th element of first and 5th element of second arrays
+// And choose maximum of the two.
+// You can assume that arrays have same length. 
+
+maxOfTwo :: {Int} {Int} -> {Int}
+maxOfTwo a b = {maxList [x,y] \\ x <-: a & y <-: b}
+
+// Start = maxOfTwo {} {} // {}
+// Start = maxOfTwo {1} {5} // {5}
+// Start = maxOfTwo {1,5,4} {2,3,6} // {2,5,6}
+// Start = maxOfTwo {1,2,3,4,5} {1,2,3,4,5} // {1,2,3,4,5}
+
+//7. You are given array of integers.
+// Your function should return true if each value appears at least twice in the array, and it should return false
+// if any element is distinct.
+
+countApp :: Int [Int] -> Int
+countApp x l = length [a \\ a <- l | a == x]
+
+// Start = f7Aux [1,2,3,1,3,2,2,2]
+
+f7Aux :: [Int] -> [Int]
+f7Aux l = map (\x = countApp x l) l
+
+f7 :: {Int} -> Bool
+f7 arr = (length [ x \\ x <- (f7Aux l) | x == 1]) == 0
+    where
+        l = toList arr
+
+// Start = f7 {1,2,3,1,3,2,2,2} // True
+// Start = f7 {1,2,3,4,3,2,1} // False
+// Start = f7 {1,1,1,3,3,4,3,2,4,2} // True
+
+//8.Array is monotonic if it is either monotone increasing or monotone decreasing
+// A is monotone increasing if for all i<=j, A[i]<=A[j]
+// A is monotone decreasing if for all i<=j, A[i]>=A[j]
+// Given array, your task is to decide if it is monotonic.
+
+// isMonotonic :: {Int} -> Bool
+
+
+// Start = isMonotonic {6,5,4,4} // True
+// Start = isMonotonic {1,3,2} // False
+// Start = isMonotonic {1,2,4,5} // True
+// Start = isMonotonic {1,1,1} // True
