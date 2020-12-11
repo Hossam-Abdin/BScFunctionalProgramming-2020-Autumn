@@ -193,6 +193,10 @@ f7 arr = (length [ x \\ x <- (f7Aux l) | x == 1]) == 0
 // A is monotone decreasing if for all i<=j, A[i]>=A[j]
 // Given array, your task is to decide if it is monotonic.
 
+// isMonotonicInc
+
+// isMonotonicDec
+
 // isMonotonic :: {Int} -> Bool
 
 
