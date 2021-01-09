@@ -21,12 +21,12 @@ Emilia2::Human
 Emilia2={firstName="Emilia",age=15,height=180}
 
 /*
-	1. Create an instance of `==` for the Human record. Two people are equal if all their 
+	1. Create an instance of `==` for the Human record. Two people are equal if all their
 	attributes are the same
 */
 
-instance == Human 
-where 
+instance == Human
+where
 	(==) x y = x.firstName==y.firstName && x.age==y.age && x.height==y.height
 
 //Start = Leo == Rose // False
@@ -51,7 +51,7 @@ where * a b = flatten [[((fst x)*(fst y), (snd x)*(fst y)),((fst x)*(snd y), (sn
 
 /*
 	3. Given an array of lists of Ints and an Int, keep the lists whose difference between max and min element is less than the given number
-	There are no [] in the array 
+	There are no [] in the array
 */
 
 minMaxDiff::{[Int]} Int->{[Int]}
@@ -68,6 +68,12 @@ minMaxDiff arr n={a\\a<-:arr|(maxList a)-(minList a)<n}
 
 // rem_min :: {Int} -> {Int}
 
+array_to_list :: {Int} -> [Int]
+array_to_list array = [i \\ i <-: array]
+
+rem_min :: {Int} -> {Int}
+rem_min arr = {a \\ a <-: arr | a > (minList (array_to_list arr))}
+
 // Start = rem_min {1,4,5,3,3,2,4,5,1,3,4} // {4,5,3,3,2,4,5,3,4}
 // Start = rem_min {1,42,42,52,452,4} // {42,42,52,452,4}
 // Start = rem_min {5} // {}
@@ -78,7 +84,8 @@ minMaxDiff arr n={a\\a<-:arr|(maxList a)-(minList a)<n}
 	5. Given two Strings as parameters, remove all characters of second string from the first one.
 */
 
-// remove_from_first_string :: String String -> String
+remove_from_first_string :: String String -> String
+remove_from_first_string string1 string2 = {elem \\ elem <-: string1 | not (isMember elem [i \\ i <-: string2]) }
 
 // Start = remove_from_first_string "Zuka" "z"// "Zuka"
 // Start = remove_from_first_string "XccEcxacXmXs aXcrccXe hXaXccXbrXd" "Xbc"// "Exams are hard"
@@ -112,7 +119,7 @@ circ (Triangle l) = l * 3.0
 circ (Rectangle d h) = 2.0 * (d + h)
 
 calc :: {Shape} -> {(Real, Real)}
-calc arr = {(area e, circ e) \\ e <-: arr} 
+calc arr = {(area e, circ e) \\ e <-: arr}
 
 //Start = calc {(Circle 3.0), (Square 2.5)} // {(28.26,18.84),(6.25,10)}
 // Start = calc {(Triangle 4.3), (Rectangle 5.4 7.2), (Circle 2.45)} // {(8.00640485798713,12.9),(38.88,25.2),(18.84785,15.386)}
@@ -124,7 +131,7 @@ calc arr = {(area e, circ e) \\ e <-: arr}
 ::Player = {player_name :: String, goals :: [Int], moral :: Moral}
 
 /*
-	7. A coach was choosing the starting team for his important game, unfortunately he/she has an issue 
+	7. A coach was choosing the starting team for his important game, unfortunately he/she has an issue
 	choosing the starting striker, let's help to choose, the best striker is a striker who has the
 	best average in scorig goals. There is another factor which the moral if the player is happy, this
 	adds 0.1 to his average. And of course we should choose the striker with the best average. (just return the name)
@@ -142,13 +149,13 @@ instance < Player
 		(<) a b = (<) (getAverage a) (getAverage b)
 
 getAverage :: Player -> Real
-getAverage p 
+getAverage p
 | p.moral == Happy = (avg goals_real) + 0.1
 = avg goals_real
 	where
 		goals_real = [toReal x \\ x <- p.goals]
 
-bestStriker :: [Player] -> String 
+bestStriker :: [Player] -> String
 bestStriker players = (maxList players).player_name
 
 //Start = bestStriker [{player_name = "Abo Trika", goals = [1,1,0,0,2], moral = Happy}, {player_name = "Ronaldo", goals = [1,1,2,0,2], moral = Sad}, {player_name = "Messi", goals = [1,1,2,1,2,2,0], moral = Happy} ] // Messi
@@ -157,10 +164,10 @@ bestStriker players = (maxList players).player_name
 
 
 /*
-	8. In a boxing match, there are two fighters and we need to run a simulations to determine who will win 
+	8. In a boxing match, there are two fighters and we need to run a simulations to determine who will win
 	(return the winner's name and the number of round he won at in a tuple).
-	Each fighter has: health points, attacking points and defense points. 
-	The match is 10 rounds, 
+	Each fighter has: health points, attacking points and defense points.
+	The match is 10 rounds,
 	in each round one of the two fighters can punch the other fighter and the round ends, and in the next round the other fighter
 	will be the one who throw the punch and so on.
 	The punch should subtract x points from the health points of the fighter (who gets hit of course), x = attacking points - defending points.
@@ -196,9 +203,9 @@ getWinnerRound a b = getWinnerRoundAux a b 1
 
 /*
 	9. Write a filter function for colored rose tree.
-	Colored rose Tree is a tree where each node has 
+	Colored rose Tree is a tree where each node has
 	some value, color and children nodes stored in list.
-	Your filter function should take tree, color and a 
+	Your filter function should take tree, color and a
 	condition function as an argument. Return a list of
 	values stored in nodes which have given color and
 	satisfy given condition (Condition function returns
@@ -215,7 +222,7 @@ tree2 = Node 1 Red [(Node 2 Blue [Node 4 Blue []]), Leaf, Leaf, (Node 3 Blue [Le
 
 instance == NodeColor
 where
-    (==) Red Red = True 
+    (==) Red Red = True
     (==) Green Green = True
     (==) Blue Blue = True
     (==) _ _ = False
@@ -238,7 +245,7 @@ where
 /*
 	10. You are given a family tree. Each Node stores
 	Person and his/her parent's family trees. If
-	the data about the person is not known than the 
+	the data about the person is not known than the
 	node is 'Unknown'. Your task is to count how many
 	person are related to ELTE. A Person is related to
 	ELTE if his/her father or mother studied at ELTE.
@@ -254,7 +261,7 @@ where
 
 ::Person = { name :: String
            , gender :: Gender
-           , almaMater :: Uni 
+           , almaMater :: Uni
            }
 
 
@@ -288,9 +295,9 @@ isRelated (Member p par1 par2) = studiedAtELTE par1 || studiedAtELTE par2
 
 studiedAtELTE :: FamilyTree -> Bool
 studiedAtELTE Unknown = False
-studiedAtELTE (Member p par1 par2) = p.almaMater == ELTE 
+studiedAtELTE (Member p par1 par2) = p.almaMater == ELTE
 
-Start = countRelated ftree1 // 2
+// Start = countRelated ftree1 // 2
 // Start = countRelated ftree2 // 9
 // Start = countRelated Unknown // 0
 // Start = countRelated ftree3 // 40
